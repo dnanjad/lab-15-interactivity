@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 id="title">This is harder than I thought</h1>
+  </head>
+  <body>
+      <a id="link1" href="#">please click me i'm lonely</a>
+      <a id="link2" href="#">please click me too</a>
+    <script>
+      document.title = 'This is harder than i thought'
+      var clickting=document.getElementById("link1");
+      clickting.addEventListener("click", myfunction);
+      var second=document.getElementById("title");
+      second.addEventListener("click", myfunction);
+      function myfunction() {
+        alert("You clicked me!");
+        return second.innerHTML="It worked!"
+        return false
+      }
+      var clickting2=document.getElementById("link2");
+      clickting2.addEventListener("click", click2);
+      var change=document.getElementById("title");
+      change.addEventListener("click", click2);
+      function click2() {
+        return change.innerHTML="Changed again!"
+        return false
+      }
+
+      //function function2() {
+        //return second.innerHTML="It worked!";
+
+    </script>
+  </body>
+</html>
